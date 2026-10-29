@@ -1,0 +1,81 @@
+{
+  "account_info": {
+    "handle": "@brewhouse_atx",
+    "platform": "instagram",
+    "bio_description": "Coffee & community since 2019.",
+    "address": "1400 S Congress Ave, Austin, TX",
+    "website": "https://brewhouseatx.example.com"
+  },
+  "posts": [
+    {
+      "post_id": "p1",
+      "date": "2026-06-01",
+      "caption_text": "Rise and shine. First pour-overs of the day are hitting the counter now. Come say hi.",
+      "hashtags": ["#brewhouseatx", "#atxcoffee"],
+      "image_url": "https://media.example.com/brewhouse/p1.jpg"
+    },
+    {
+      "post_id": "p2",
+      "date": "2026-06-05",
+      "caption_text": "New seasonal cold brew is here: cinnamon horchata. Sweet, cold, dangerously easy to order two of.",
+      "hashtags": ["#brewhouseatx", "#coldbrew"],
+      "image_url": "https://media.example.com/brewhouse/p2.jpg"
+    },
+    {
+      "post_id": "p3",
+      "date": "2026-06-09",
+      "caption_text": "Local artist spotlight: the prints on our south wall this month are from @atx.linework. Stop in and take a look.",
+      "hashtags": ["#brewhouseatx", "#southcongress", "#localart"],
+      "image_url": "https://media.example.com/brewhouse/p3.jpg"
+    },
+    {
+      "post_id": "p4",
+      "date": "2026-06-14",
+      "caption_text": "Saturday morning regulars, you know the drill: patio's open, dog bowls are full, and the playlist is all soft rock this weekend.",
+      "hashtags": ["#brewhouseatx", "#patiolife"],
+      "image_url": "https://media.example.com/brewhouse/p4.jpg"
+    },
+    {
+      "post_id": "p5",
+      "date": "2026-06-20",
+      "caption_text": "We ran out of croissants by 9am again. Sorry to everyone who showed up late - we're doubling the batch starting next week.",
+      "hashtags": ["#brewhouseatx", "#freshbaked"],
+      "image_url": "https://media.example.com/brewhouse/p5.jpg"
+    },
+    {
+      "post_id": "p6",
+      "date": "2026-06-25",
+      "caption_text": "Five years ago we opened with four tables and a secondhand espresso machine. Thank you, South Congress, for sticking with us.",
+      "hashtags": ["#brewhouseatx", "#fiveyears", "#southcongress"],
+      "image_url": "https://media.example.com/brewhouse/p6.jpg"
+    },
+    {
+      "post_id": "p7",
+      "date": "2026-06-30",
+      "caption_text": "Community board is filling up fast - if you've got a flyer for a local event, bring it by and we'll pin it up.",
+      "hashtags": ["#brewhouseatx", "#community"],
+      "image_url": "https://media.example.com/brewhouse/p7.jpg"
+    },
+    {
+      "post_id": "p8",
+      "date": "2026-07-05",
+      "caption_text": "Iced oat lattes are outselling everything else this week. Not complaining, just noting it for the record.",
+      "hashtags": ["#brewhouseatx", "#atxcoffee"],
+      "image_url": "https://media.example.com/brewhouse/p8.jpg"
+    },
+    {
+      "post_id": "p9",
+      "date": "2026-07-10",
+      "caption_text": "Tuesday trivia night starts at 7. Bring a team, we've got a gift card on the line.",
+      "hashtags": ["#brewhouseatx", "#trivianight"],
+      "image_url": "https://media.example.com/brewhouse/p9.jpg"
+    },
+    {
+      "post_id": "p10",
+      "date": "2026-07-14",
+      "caption_text": "Thanks for another great week, Austin. See you at the counter.",
+      "hashtags": ["#brewhouseatx", "#atxcoffee"],
+      "image_url": "https://media.example.com/brewhouse/p10.jpg"
+    }
+  ]
+}

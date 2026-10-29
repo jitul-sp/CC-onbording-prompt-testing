@@ -1,0 +1,14 @@
+{
+  "provenance_weights": {
+    "structured_data": 3,
+    "platform_maintained_field": 2,
+    "freeform_about_text": 1.5,
+    "footer_or_copyright_only": 0.5
+  },
+  "staleness_penalty": 0.5,
+  "corroboration_weights": {
+    "single_mention": 0.5,
+    "corroborated_2plus": 2
+  },
+  "tie_break_winner": "social"
+}

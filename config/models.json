@@ -1,0 +1,7 @@
+[
+  { "id": "claude-haiku-5-5", "label": "Claude Haiku 5.5 (cheapest)", "price_in_per_mtok": 0.10, "price_out_per_mtok": 0.50 },
+  { "id": "claude-sonnet-5-5", "label": "Claude Sonnet 5.5", "price_in_per_mtok": 2.00, "price_out_per_mtok": 10.00 },
+  { "id": "claude-opus-5-5", "label": "Claude Opus 5.5", "price_in_per_mtok": 4.00, "price_out_per_mtok": 20.00 },
+  { "id": "claude-fable-5-1", "label": "Claude Fable 5.1 (most expensive)", "price_in_per_mtok": 10.00, "price_out_per_mtok": 50.00 },
+  { "id": "claude-haiku-4-5-20251001", "label": "Claude Haiku 4.5 (legacy, for comparing past runs)", "price_in_per_mtok": 1.00, "price_out_per_mtok": 5.00 }
+]

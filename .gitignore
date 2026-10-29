@@ -1,0 +1,13 @@
+node_modules/
+.DS_Store
+
+# secrets - API keys live here or in ANTHROPIC_API_KEY, never in git
+config/local-secrets.json
+.env
+.env.*
+
+# real customer data (emails, posts) - keep local
+*.csv
+!Post data/_samples/**
+Run logs/
+config/test-samples.json

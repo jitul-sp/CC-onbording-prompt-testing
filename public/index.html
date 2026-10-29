@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Brand Guideline Prompt Lab</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="topbar">
+  <h1>Brand Guideline Prompt Lab</h1>
+  <div class="key-area">
+    <span id="keyStatus" class="key-status">checking key...</span>
+    <input id="apiKeyInput" type="password" placeholder="sk-ant-..." />
+    <label class="remember-label"><input id="rememberKey" type="checkbox" /> remember on this machine</label>
+    <button id="saveKeyBtn">Save key</button>
+    <button id="clearKeyBtn" class="secondary">Clear</button>
+  </div>
+</header>
+
+<main class="layout">
+  <section class="panel config-panel">
+    <h2>Run configuration</h2>
+
+    <label class="field">
+      <span>Post data file</span>
+      <select id="postDataSelect"></select>
+    </label>
+    <div id="postDataMeta" class="meta-line"></div>
+    <label class="field" id="accountField" hidden>
+      <span>Account (one connected Facebook page / Instagram profile)</span>
+      <select id="accountSelect"></select>
+    </label>
+    <label class="field">
+      <span>Posts to read (most recent first; default 20, empty = all)</span>
+      <input id="postLimitInput" type="number" min="1" step="1" value="20" placeholder="all" />
+    </label>
+    <label class="field">
+      <span>Brand name (optional - if known, e.g. the page name; leave empty to let the model find it)</span>
+      <input id="brandNameInput" type="text" placeholder="found from the posts" />
+    </label>
+    <label class="field">
+      <span>Website (optional - the brand's homepage, read for what the business is, its name, location and tone)</span>
+      <input id="websiteInput" type="text" placeholder="e.g. ploughdormansland.com" />
+    </label>
+    <div id="lowPostWarning" class="warning-banner" hidden></div>
+
+    <div class="role-row">
+      <label class="field grow">
+        <span>Role</span>
+        <select id="roleSelect"></select>
+      </label>
+      <button id="addRoleBtn" title="Add role">+ Role</button>
+      <button id="editRoleBtn" title="Edit role label/description">Edit role</button>
+      <button id="deleteRoleBtn" class="danger" title="Delete role">Delete role</button>
+    </div>
+
+    <div class="role-row">
+      <label class="field grow">
+        <span>Version</span>
+        <select id="versionSelect"></select>
+      </label>
+    </div>
+
+    <details class="prompt-editor" open>
+      <summary>Prompt content</summary>
+      <label class="field">
+        <span>Name</span>
+        <input id="promptName" type="text" />
+      </label>
+      <label class="field">
+        <span>System prompt</span>
+        <textarea id="promptSystem" rows="8"></textarea>
+      </label>
+      <label class="field">
+        <span>User template</span>
+        <textarea id="promptUser" rows="8"></textarea>
+      </label>
+      <label class="field">
+        <span>Notes</span>
+        <textarea id="promptNotes" rows="2"></textarea>
+      </label>
+      <div class="editor-actions">
+        <button id="newVersionBtn">New version</button>
+        <button id="saveVersionBtn">Save (overwrite this version)</button>
+        <button id="saveAsNewBtn">Save as new version</button>
+        <button id="deleteVersionBtn" class="danger">Delete this version</button>
+      </div>
+    </details>
+
+    <label class="field">
+      <span>Model</span>
+      <select id="modelSelect"></select>
+    </label>
+    <label class="field">
+      <span>Effort (how much the model thinks - higher is slower and uses more tokens)</span>
+      <select id="effortSelect">
+        <option value="low">low</option>
+        <option value="medium" selected>medium</option>
+        <option value="high">high</option>
+      </select>
+    </label>
+    <label class="field checkbox-field">
+      <input id="debugCheckbox" type="checkbox" />
+      <span>Debug: save resized images to disk</span>
+    </label>
+
+    <button id="runBtn" class="primary run-btn">Run</button>
+    <div id="runStatus" class="run-status"></div>
+  </section>
+
+  <section class="panel output-panel">
+    <h2>Output</h2>
+    <div id="outputEmpty" class="empty-state">Run a prompt to see output here.</div>
+    <div id="outputContent" hidden>
+      <div id="outputParagraph" class="paragraph-box" hidden></div>
+      <div id="outputColors" class="brand-colors" hidden></div>
+      <div id="outputJson" class="json-box" hidden></div>
+      <div id="outputError" class="error-box" hidden></div>
+      <div class="output-meta">
+        <span id="outputLatency"></span>
+        <span id="outputUsage"></span>
+      </div>
+      <div id="imageFailures" class="image-failures" hidden></div>
+      <div id="outputStages" class="output-stages" hidden></div>
+      <button id="viewRunInputsBtn">View inputs used (images &amp; captions)</button>
+      <details class="raw-output">
+        <summary>Raw model output</summary>
+        <pre id="outputRaw"></pre>
+      </details>
+    </div>
+  </section>
+</main>
+
+<section class="panel history-panel">
+  <h2>Run history</h2>
+  <div class="history-filters">
+    <label class="field">
+      <span>Filter by role</span>
+      <select id="historyRoleFilter">
+        <option value="">All roles</option>
+      </select>
+    </label>
+    <label class="field">
+      <span>Filter by post data file</span>
+      <select id="historyFileFilter">
+        <option value="">All files</option>
+      </select>
+    </label>
+    <button id="refreshHistoryBtn">Refresh</button>
+  </div>
+  <table class="history-table">
+    <thead>
+      <tr>
+        <th>Timestamp</th>
+        <th>Post data file</th>
+        <th>Role / version</th>
+        <th>Model</th>
+        <th>Effort</th>
+        <th>Latency · cost</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody id="historyBody"></tbody>
+  </table>
+</section>
+
+<dialog id="runDialog" class="run-dialog">
+  <div class="run-dialog-head">
+    <h3 id="runDialogTitle">Run</h3>
+    <button id="runDialogClose">Close</button>
+  </div>
+  <div id="runDialogBody"></div>
+</dialog>
+
+<script src="app.js"></script>
+</body>
+</html>

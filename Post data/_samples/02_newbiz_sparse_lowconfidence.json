@@ -1,0 +1,27 @@
+{
+  "account_info": {
+    "handle": "@sift.and.rise",
+    "platform": "instagram",
+    "bio_description": "New bakery, one pan at a time."
+  },
+  "posts": [
+    {
+      "post_id": "p1",
+      "date": "2026-08-01",
+      "caption_text": "First pop-up is officially a wrap! Thank you to everyone who came out and tried the sourdough.",
+      "hashtags": ["#siftandrise"]
+    },
+    {
+      "post_id": "p2",
+      "date": "2026-08-08",
+      "caption_text": "Trying a new cardamom bun recipe this week. Will report back.",
+      "hashtags": ["#siftandrise", "#baking"]
+    },
+    {
+      "post_id": "p3",
+      "date": "2026-08-15",
+      "caption_text": "Still figuring out the Saturday pop-up schedule - check back for the next date.",
+      "hashtags": ["#siftandrise"]
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "account_info": {
+    "handle": "@northbridge_outfitters",
+    "platform": "instagram",
+    "bio_description": "Outdoor gear, est. 2015."
+  },
+  "posts": [
+    {
+      "post_id": "p1",
+      "date": "2026-03-01",
+      "caption_text": "Northbridge Outfitters is pleased to announce the launch of our Spring Trail Collection, engineered for durability across all terrain types.",
+      "hashtags": ["#northbridge", "#newcollection"]
+    },
+    {
+      "post_id": "p2",
+      "date": "2026-03-10",
+      "caption_text": "Our commitment to sustainable materials continues with the introduction of recycled nylon shells across our outerwear line.",
+      "hashtags": ["#northbridge", "#sustainability"]
+    },
+    {
+      "post_id": "p3",
+      "date": "2026-03-20",
+      "caption_text": "Please join us at our flagship location for the Spring Collection preview event on April 2nd.",
+      "hashtags": ["#northbridge", "#event"]
+    },
+    {
+      "post_id": "p4",
+      "date": "2026-03-28",
+      "caption_text": "Northbridge Outfitters extends its gratitude to customers for another successful quarter.",
+      "hashtags": ["#northbridge"]
+    },
+    {
+      "post_id": "p5",
+      "date": "2026-07-02",
+      "caption_text": "ok but who decided hiking boots should look like THIS. new drop just hit and it's unreasonably good",
+      "hashtags": ["#northbridge", "#hikevibes"]
+    },
+    {
+      "post_id": "p6",
+      "date": "2026-07-10",
+      "caption_text": "us when someone says 'just wear sneakers on the trail' - absolutely not, bestie",
+      "hashtags": ["#northbridge"]
+    },
+    {
+      "post_id": "p7",
+      "date": "2026-07-18",
+      "caption_text": "POV: you bought the jacket in every color because the sale was THAT good",
+      "hashtags": ["#northbridge", "#sale"]
+    },
+    {
+      "post_id": "p8",
+      "date": "2026-07-25",
+      "caption_text": "not us restocking the trail mix collab for the third time this month. y'all really love snacks huh",
+      "hashtags": ["#northbridge"]
+    }
+  ]
+}

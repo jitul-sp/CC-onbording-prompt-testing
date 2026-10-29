@@ -1,0 +1,60 @@
+{
+  "account_info": {
+    "handle": "@maple.and.co",
+    "platform": "instagram",
+    "bio_description": "Neighborhood diner, family run since 1998.",
+    "address": "220 Maple St, Portland, OR",
+    "website": "https://mapleandco.example.com"
+  },
+  "posts": [
+    {
+      "post_id": "p1",
+      "date": "2026-06-01",
+      "caption_text": "Sunday brunch special: buttermilk pancakes with real maple syrup.",
+      "hashtags": ["#mapleandco", "#brunch"],
+      "image_url": "https://media.example.com/mapleandco/p1.jpg"
+    },
+    {
+      "post_id": "p2",
+      "date": "2026-06-08",
+      "caption_text": "Thank you to the regulars who've been coming in every week since we opened - you know who you are.",
+      "hashtags": ["#mapleandco"],
+      "image_url": "https://media.example.com/mapleandco/p2.jpg"
+    },
+    {
+      "post_id": "p3",
+      "date": "2026-06-15",
+      "caption_text": "New hire alert: welcome to the team, Danny! He makes a mean hash brown.",
+      "hashtags": ["#mapleandco", "#familyrun"],
+      "image_url": "https://media.example.com/mapleandco/p3.jpg"
+    },
+    {
+      "post_id": "p4",
+      "date": "2026-06-22",
+      "caption_text": "Our biscuits are back on the menu after a two week hiatus. You're welcome.",
+      "hashtags": ["#mapleandco"],
+      "image_url": "https://media.example.com/mapleandco/p4-expired-signature-abc123.jpg"
+    },
+    {
+      "post_id": "p5",
+      "date": "2026-06-29",
+      "caption_text": "Closed Monday for a deep clean - back Tuesday at 7am as usual.",
+      "hashtags": ["#mapleandco"],
+      "image_url": "https://media.example.com/mapleandco/p5.jpg"
+    },
+    {
+      "post_id": "p6",
+      "date": "2026-07-06",
+      "caption_text": "26 years in this neighborhood and counting. Thank you, Portland.",
+      "hashtags": ["#mapleandco", "#familyrun"],
+      "image_url": "https://media.example.com/mapleandco/p6.jpg"
+    },
+    {
+      "post_id": "p7",
+      "date": "2026-07-13",
+      "caption_text": "Coffee refills are still free. Some things don't change.",
+      "hashtags": ["#mapleandco"],
+      "image_url": "https://media.example.com/mapleandco/p7.jpg"
+    }
+  ]
+}

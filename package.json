@@ -1,0 +1,20 @@
+{
+  "name": "brand-prompt-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local tool for testing and iterating on prompts that generate a brand-guideline paragraph from Instagram/Facebook post data.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "sharp": "^0.33.5"
+  },
+  "allowScripts": {
+    "sharp@0.33.5": true
+  }
+}

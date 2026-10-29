@@ -1,0 +1,8 @@
+{
+  "name": "brand-guide-pipeline",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/runBrandGuide.js",
+  "engines": { "node": ">=18" },
+  "dependencies": { "sharp": "^0.33.5" }
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "extraction",
+    "label": "Extraction",
+    "description": "Extracts structured social-only signals (content pillars, voice & tone, hashtag strategy, location, per-image color classification) from posts"
+  },
+  {
+    "id": "website_extraction",
+    "label": "Website Extraction",
+    "description": "Extracts location and copy-tone signals from the account's website, and reports on app-supplied CSS color data"
+  },
+  {
+    "id": "validation",
+    "label": "Validation",
+    "description": "Fact-checks the merged social+website guideline against source posts and website content"
+  },
+  {
+    "id": "compose",
+    "label": "Compose Paragraph",
+    "description": "Writes the final plain-language paragraph for the input box"
+  }
+]
